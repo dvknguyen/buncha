@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--color-white);
+    background-color: white;
    
 
     padding: 1rem 2 rem;

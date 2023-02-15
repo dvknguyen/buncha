@@ -7,7 +7,7 @@
 
 .app__wrapper_info {
     color: white;
-    width: 100%;
+    width: 40%;
     align-items: center;
 }
 
@@ -28,7 +28,7 @@
     text-align: center;
 }
 .app__wrapper_img img {
-   width: 90%;
+   width: 100%;
 }
 
 
@@ -39,7 +39,10 @@
 @media screen and (max-width: 1150px){
     .app__header {
         display: block;
-    
+    }
+
+    .app__wrapper_info {
+        width: 100%;
     }
 }
 
@@ -47,7 +50,6 @@
 
     .app__header {
         display: block;
-    
     }
     
 }

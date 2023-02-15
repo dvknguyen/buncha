@@ -1,0 +1,29 @@
+.app__footer-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.header-img {
+    width: 150px;
+}
+
+.app__footer-links {
+    color: black;
+    background-color: white;
+}
+
+.footer__copyright {
+    text-align: center;
+    color: black;
+    background-color: white;
+}
+
+@media screen and (max-width: 650px){
+
+    .app__footer-links {
+        flex-direction: column;
+    } 
+}
