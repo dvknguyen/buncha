@@ -18,7 +18,7 @@ const Header = () => {
             und Gemüsegerichten serviert werden.
           </p>
         </div>
-        <div className="app_wrapper_img">
+        <div className="app__wrapper_img">
           <img className="header-img" src={images.titleImg} alt="header img" />
         </div>
       </div>
