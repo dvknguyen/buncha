@@ -1,0 +1,31 @@
+.app__header {
+    background-color: var(--color-black);
+    padding-left: 40px;
+    display: flex;
+}
+
+.app__wrapper-info {
+    color: white;
+    align-items: left;
+}
+
+.app__header-h1 {
+    color: white;
+    width: 100px;
+    text-transform: uppercase;
+}
+
+.app__header-p {
+    color: white;
+    font-size: 18px;
+    width: 100px;
+    padding: 20px 0px;
+}
+
+.app_wrapper_img{
+    padding-left: 50px;
+    padding-top: 40px;
+}
+.app_wrapper_img img {
+    width: 150px;
+}
