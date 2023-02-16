@@ -28,9 +28,9 @@ const Navbar = () => {
           </Link>
         </li>
         <li>
-          <a href="#resevation" className="a-font">
+          <Link className="a-font" to="/reservation">
             Resevierung
-          </a>
+          </Link>
         </li>
       </ul>
       <div className="app__navbar-smallscreen">
