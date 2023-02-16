@@ -15,8 +15,8 @@ const galleryImges = [
   images.gallery07,
 ];
 const Gallery = () => {
-  const scrollRef = useRef(null);
-  const scroll = (direction) => {
+  const scrollRef = useRef(document.createElement("div"));
+  const scroll = (direction: string) => {
     const { current } = scrollRef;
     if (direction === "left") {
       current.scrollLeft -= 300;

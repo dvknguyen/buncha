@@ -13,7 +13,7 @@ const Footer = () => {
           <p> 0611 205 777 53</p>
           <p>bun-cha-wiesbaden@gmail.com</p>
         </div>
-        <div class="app__footer-links_logo">
+        <div className="app__footer-links_logo">
           <img className="header-img" src={images.logo} alt="header img" />
           <h1> Taste The New Flavor</h1>
         </div>

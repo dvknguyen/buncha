@@ -1,11 +1,12 @@
 import react from "react";
-import Footer from "../components/Footer/Footer";
+import Appetizer from "../components/Appetizer/Appetizer";
 import Navbar from "../components/Navbar/Navbar";
 
 const Menu = () => {
   return (
     <div>
       <h1>Unser Menü</h1>
+      <Appetizer />
     </div>
   );
 };

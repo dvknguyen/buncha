@@ -10,10 +10,10 @@ import { de } from "date-fns/locale";
 import "./ReservationForm.css";
 
 const Mail = () => {
-  const [selectedDate, handleDateChange] = useState(new Date());
-  const form = useRef();
+  const [selectedDate, handleDateChange] = useState<Date | null>(new Date());
+  const form = useRef(document.createElement("form"));
 
-  const sendEmail = (e) => {
+  const sendEmail = (e: { preventDefault: () => void }) => {
     e.preventDefault();
 
     emailjs

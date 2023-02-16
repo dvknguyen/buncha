@@ -2,13 +2,11 @@ import React from "react";
 
 import Navbar from "./components/Navbar/Navbar";
 import "../src/index.css";
-import Header from "./components/Header/Header";
-import Gallery from "./components/Gallery/Gallery";
-import Footer from "./components/Footer/Footer";
-import { Switch, Route, Routes, Link } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Menu from "./pages/Menu";
-import Dashboard from "./pages/Dashboard";
 import Reservation from "./pages/Reservation";
+import Footer from "./components/Footer/Footer";
+import Dashboard from "./pages/Dashboard";
 
 function App() {
   return (

@@ -1,0 +1,51 @@
+[
+  {
+    "id": 1,
+    "name": "Mini Frühlingsrollen",
+    "description": "6st vegetarische Frühlingsrollen mit Süß-Sauer-Soße",
+    "price": 3.9,
+    "image": ""
+  },
+  {
+    "id": 2,
+    "name": "Vietnamesiche Frühlingsrollen",
+    "description": "2st traditionelle Frühlingsrollen gefüllt mit Hackfleisch imd Schrimps, Fühlingszweibeln, Kohlrabi, Karotten, Morcheln, MuerrPilze, Glasnudeln und Fischsosse",
+    "price": 4.9,
+    "image": ""
+  },
+  {
+    "id": 3,
+    "name": "Chicken Sate Spieße",
+    "description": "2st Spieße mit hausgemachter Erdnuss-Soße",
+    "price": 4.9,
+    "image": ""
+  },
+  {
+    "id": 4,
+    "name": "Kokosmilchsuppe",
+    "description": "Mit Hähnchen, Kräuterseitlinge, Karotten und Frühlingszweibeln",
+    "price": 4.9,
+    "image": ""
+  },
+  {
+    "id": 5,
+    "name": "Wantansuppe",
+    "description": "Mit Hähnchen und Schrimps gefüllten Teigtaschen, Mini Pakchoi und Frühlingszwiebeln",
+    "price": 4.9,
+    "image": ""
+  },
+  {
+    "id": 6,
+    "name": "Eiersuppe",
+    "description": "Mit Eier, Tomaten, Koriander und Frühlingszwiebeln",
+    "price": 3.9,
+    "image": ""
+  },
+  {
+    "id": 7,
+    "name": "Gebackene Wantan",
+    "description": "5 Teigtaschen gefüllt mit Hähnchen und Garnelen",
+    "price": 4.9,
+    "image": ""
+  }
+]

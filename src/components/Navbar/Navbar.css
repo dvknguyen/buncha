@@ -5,6 +5,7 @@
     align-items: center;
     background-color: white;
    
+   
 
     padding: 1rem 2 rem;
 }
@@ -131,4 +132,23 @@ a {
         align-items: right;
     }
     
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background-color: white;
+
+}
+
+.items_number {
+    transform: translate(25px, 60%);
+    color: red;
+    position: absolute; 
+    font-size: x-large;
 }
