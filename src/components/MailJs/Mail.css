@@ -1,0 +1,7 @@
+.app__reservation-formular {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    justify-content: center;
+    margin: auto;
+}

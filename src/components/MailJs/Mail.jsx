@@ -1,7 +1,16 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
+import TextField from "@material-ui/core/TextField";
+import TextareaAutosize from "@mui/base/TextareaAutosize";
+import { MuiPickersUtilsProvider } from "@material-ui/pickers";
+import DateFnsUtils from "@date-io/date-fns";
+import { DatePicker, TimePicker, DateTimePicker } from "@material-ui/pickers";
+import { de } from "date-fns/locale";
+import "./Mail.css";
+
 const Mail = () => {
+  const [selectedDate, handleDateChange] = useState(new Date());
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -17,7 +26,6 @@ const Mail = () => {
       .then(
         (result) => {
           console.log(result.text);
-          console.log(form.current[3]);
         },
         (error) => {
           console.log(error.text);
@@ -26,15 +34,57 @@ const Mail = () => {
   };
   return (
     <form ref={form} onSubmit={sendEmail}>
-      <label>Name</label>
-      <input type="text" name="user_name" />
-      <label>Email</label>
-      <input type="email" name="user_email" />
-      <label>Message</label>
-      <textarea name="message" />
-      <label>Phone</label>
-      <input type="text" name="user_phone" />
-      <input type="submit" value="Send" />
+      <div className="app__reservation-formular">
+        <TextField
+          required
+          type="text"
+          id="user_name"
+          label="Name"
+          variant="standard"
+          name="user_name"
+        />
+        <TextField
+          required
+          type="email"
+          id="user_email"
+          label="Email"
+          variant="standard"
+          name="user_email"
+        />
+        <TextField
+          required
+          type="number"
+          id="user_guest_number"
+          label="Anzahl der Personen"
+          variant="standard"
+          name="user_guest_number"
+        />
+        <TextField
+          required
+          type="tel"
+          id="user_phone"
+          label="Telefon"
+          variant="standard"
+          name="user_phone"
+        />
+        <MuiPickersUtilsProvider utils={DateFnsUtils} locale={de}>
+          <DateTimePicker
+            required
+            value={selectedDate}
+            onChange={handleDateChange}
+            name="user_datetime"
+          ></DateTimePicker>
+        </MuiPickersUtilsProvider>
+
+        <TextareaAutosize
+          aria-label="minimum height"
+          placeholder="Bemerkung"
+          minRows={6}
+          name="user_message"
+        />
+
+        <input type="submit" value="Send" />
+      </div>
     </form>
   );
 };
