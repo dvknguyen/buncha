@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { GiHamburgerMenu, GiChopsticks } from "react-icons/gi";
 import "./Navbar.css";
 import images from "../../constants/images";
-
+import { Link } from "react-router-dom";
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
   return (
@@ -13,19 +13,19 @@ const Navbar = () => {
       </div>
       <ul className="app__navbar-links">
         <li>
-          <a href="#home" className="a-font">
-            Home
-          </a>
+          <Link className="a-font" to="/home">
+            Startseite
+          </Link>
         </li>
         <li>
-          <a href="#menu" className="a-font">
+          <Link className="a-font" to="/menu">
             Menü
-          </a>
+          </Link>
         </li>
-        <li c>
-          <a href="#contact" className="a-font">
+        <li>
+          <Link className="a-font" to="#contact">
             Kontakt
-          </a>
+          </Link>
         </li>
         <li>
           <a href="#resevation" className="a-font">

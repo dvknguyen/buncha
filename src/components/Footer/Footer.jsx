@@ -6,7 +6,7 @@ import "./Footer.css";
 const Footer = () => {
   return (
     <>
-      <div className="app__footer-links">
+      <div className="app__footer-links" id="contact">
         <div className="app__footer-links_contact">
           <h1 className="app__footer-headtext">Kontakt</h1>
           <p>Taunusstraße 41, 65183 Wiesbaden</p>
