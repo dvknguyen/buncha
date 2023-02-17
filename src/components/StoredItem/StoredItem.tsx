@@ -23,8 +23,21 @@ export function StoredItem({ id, name, description, price }: StoreItemProps) {
           {price}
         </Grid>
       </Grid>
-      <div>
-        {quantity === 0 ? <Button> + Zum Warenbork hinzufügen</Button> : null}
+      <div className="add-area">
+        {quantity === 0 ? (
+          <Button variant="contained"> + Zum Warenkorb hinzufügen</Button>
+        ) : (
+          <div className="add-area">
+            <div className="add-area">
+              <Button variant="contained">-</Button>
+              <span>{quantity} im Warenkorb</span>
+              <Button variant="contained">+</Button>
+            </div>
+            <div className="add-area">
+              <Button variant="contained">Entfernen</Button>
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );
