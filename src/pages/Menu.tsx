@@ -1,5 +1,5 @@
 import react from "react";
-import Appetizer from "../components/Appetizer/Appetizer";
+import { Appetizer } from "../components/Appetizer/Appetizer";
 import Navbar from "../components/Navbar/Navbar";
 
 const Menu = () => {
