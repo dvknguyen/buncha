@@ -1,4 +1,5 @@
 import { Button, Grid } from "@material-ui/core";
+import { useShoppingCart } from "../../context/ShoppingCartContext";
 import "./StoredItem.css";
 
 type StoreItemProps = {
@@ -10,6 +11,13 @@ type StoreItemProps = {
 
 const quantity = 0;
 export function StoredItem({ id, name, description, price }: StoreItemProps) {
+  const {
+    getItemQuantity,
+    increaseCardQuantity,
+    decreaseCardQuantity,
+    removeFromCard,
+  } = useShoppingCart();
+  const quantity = getItemQuantity(id);
   return (
     <div className="item-card">
       <Grid container spacing={1}>
@@ -25,16 +33,31 @@ export function StoredItem({ id, name, description, price }: StoreItemProps) {
       </Grid>
       <div className="add-area">
         {quantity === 0 ? (
-          <Button variant="contained"> + Zum Warenkorb hinzufügen</Button>
+          <Button variant="contained" onClick={() => increaseCardQuantity(id)}>
+            {" "}
+            + Zum Warenkorb hinzufügen
+          </Button>
         ) : (
           <div className="add-area">
             <div className="add-area">
-              <Button variant="contained">-</Button>
+              <Button
+                variant="contained"
+                onClick={() => decreaseCardQuantity(id)}
+              >
+                -
+              </Button>
               <span>{quantity} im Warenkorb</span>
-              <Button variant="contained">+</Button>
+              <Button
+                variant="contained"
+                onClick={() => increaseCardQuantity(id)}
+              >
+                +
+              </Button>
             </div>
             <div className="add-area">
-              <Button variant="contained">Entfernen</Button>
+              <Button variant="contained" onClick={() => removeFromCard(id)}>
+                Entfernen
+              </Button>
             </div>
           </div>
         )}

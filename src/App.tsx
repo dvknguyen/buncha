@@ -7,10 +7,11 @@ import Menu from "./pages/Menu";
 import Reservation from "./pages/Reservation";
 import Footer from "./components/Footer/Footer";
 import Dashboard from "./pages/Dashboard";
+import { ShoppingCartProvider } from "./context/ShoppingCartContext";
 
 function App() {
   return (
-    <>
+    <ShoppingCartProvider>
       <Navbar />
       <Routes>
         <Route path="/" element={<Dashboard />} />
@@ -19,7 +20,7 @@ function App() {
         <Route path="/reservation" element={<Reservation />} />
       </Routes>
       <Footer />
-    </>
+    </ShoppingCartProvider>
   );
 }
 
