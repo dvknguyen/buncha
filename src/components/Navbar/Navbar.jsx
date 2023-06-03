@@ -5,7 +5,7 @@ import { FaShoppingCart } from "react-icons/fa";
 import "./Navbar.css";
 import images from "../../constants/images";
 import { Link } from "react-router-dom";
-import { Button } from "@material-ui/core";
+import Button from "@mui/material/Button";
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
   return (

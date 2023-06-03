@@ -27,9 +27,6 @@
 .app__wrapper_img{
     text-align: center;
 }
-.app__wrapper_img img {
-   width: 100%;
-}
 
 
 @media screen and (max-width: 2000px){
@@ -52,4 +49,44 @@
         display: block;
     }
     
+}
+
+.slide-img {
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+    
+}
+
+.img-wrapper.active {
+    margin: 100px;
+    transition-duration: 1s ;
+    transform: scale(1.08);
+}
+
+
+.img-wrapper {
+    margin: 100px;
+    transition-duration: 1s ease;
+}
+
+.left-arrow {
+    position:absolute;
+    top: 80%;
+    left: 50px;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+    font-size: 100px;
+    color: black;
+}
+
+.right-arrow {
+    position:absolute;
+    top: 80%;
+    right: 50px;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+    color: black;
 }

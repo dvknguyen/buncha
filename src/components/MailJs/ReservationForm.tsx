@@ -1,11 +1,7 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-
-import TextField from "@material-ui/core/TextField";
+import { TextField } from "@mui/material";
 import TextareaAutosize from "@mui/base/TextareaAutosize";
-import { MuiPickersUtilsProvider } from "@material-ui/pickers";
-import DateFnsUtils from "@date-io/date-fns";
-import { DateTimePicker } from "@material-ui/pickers";
 import { de } from "date-fns/locale";
 import "./ReservationForm.css";
 
@@ -67,14 +63,6 @@ const Mail = () => {
           variant="standard"
           name="user_phone"
         />
-        <MuiPickersUtilsProvider utils={DateFnsUtils} locale={de}>
-          <DateTimePicker
-            required
-            value={selectedDate}
-            onChange={handleDateChange}
-            name="user_datetime"
-          ></DateTimePicker>
-        </MuiPickersUtilsProvider>
 
         <TextareaAutosize
           aria-label="minimum height"
